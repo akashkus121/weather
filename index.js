@@ -3,7 +3,7 @@ const request = require('request');
 const http = require('http');
 require('dotenv').config(); // Load environment variables
 
-const homeFile = fs.readFileSync('home.html', 'utf-8');
+const homeFile = fs.readFileSync('index.html', 'utf-8');
 
 const replaceval = (tempval, orgval) => {
     if (!orgval || !orgval.main || !orgval.main.temp || !orgval.main.temp_min || !orgval.main.temp_max || !orgval.name || !orgval.sys || !orgval.sys.country || !orgval.weather || !orgval.weather[0] || !orgval.weather[0].main) {
