@@ -78,7 +78,7 @@ var weekDays = [
 // || FUNCTION FOR GET WEATHER REPORT
 async function weatherReport(searchCity) {
   weatherApi = await fetch(
-    `https://api.weatherapi.com/v1/forecast.json?key=ea9f922db81b9d20083f03720c87866c&q=${searchCity}&days=7&aqi=yes&alerts=no`
+    `https://api.weatherapi.com/v1/forecast.json?key=da2103b2c4ce4f95af051626232503&q=${searchCity}&days=7&aqi=yes&alerts=no`
   );
   responseData = await weatherApi.json();
 
